@@ -5,8 +5,9 @@
 @author: Finbarrs Oketunji
 @contact: f@finbarrs.eu
 @time: Friday June 20 23:15:00 2025
+@updated: Sunday June 22 16:34:03 2025
 @desc: SEO AI Agents for SEO Analysis.
-@version: 0.0.1
+@version: 0.0.2
 @license: MIT
 @run: python3 seo_agents.py
 """
@@ -28,7 +29,7 @@ from langchain_anthropic import ChatAnthropic
 class AIProvider(Enum):
     """Enumeration of supported AI providers"""
     GPT4 = "gpt-4.1"
-    CLAUDE = "claude-sonnet-4-20250514"
+    CLAUDE = "claude-3-7-sonnet-20250219"
 
 
 class SEOTaskType(Enum):
@@ -66,7 +67,7 @@ class AIModelManager:
         os.environ["OPENAI_API_KEY"] = api_key
         self.openai_client = openai.OpenAI(api_key=api_key)
         self.openai_llm = ChatOpenAI(
-            model="gpt-4",
+            model="gpt-4.1",
             temperature=0.7,
             max_tokens=2000,
             api_key=api_key
@@ -78,7 +79,7 @@ class AIModelManager:
         self.claude_key = api_key
         os.environ["ANTHROPIC_API_KEY"] = api_key
         self.claude_llm = ChatAnthropic(
-            model="claude-3-sonnet-20240229",
+            model="claude-3-7-sonnet-20250219",
             temperature=0.7,
             max_tokens=2000,
             anthropic_api_key=api_key

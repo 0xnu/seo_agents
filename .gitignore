@@ -1,6 +1,7 @@
 # Generated files
 package/generated*
 .ruff_cache
+result_*
 
 # Ignore installed npm modules
 node_modules/
