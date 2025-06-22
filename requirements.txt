@@ -1,0 +1,10 @@
+crewai
+openai
+langchain
+langchain-openai
+langchain-anthropic
+langchain-community
+anthropic
+requests
+pydantic
+python-dotenv

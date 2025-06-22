@@ -1,0 +1,50 @@
+# Generated files
+package/generated*
+.ruff_cache
+
+# Ignore installed npm modules
+node_modules/
+
+# Ignore build tool output, e.g. code coverage
+.nyc_output/
+coverage/
+
+# Ignore API documentation
+api-docs/
+
+# Ignore folders from source code editors
+.vscode
+.idea
+
+# Ignore eleventy output 
+_site
+
+# Ignore test files
+.cache
+test/stubs-layout-cache/_includes/*.js
+
+# Ignore macOS DS_Store
+.DS_Store
+testing.sh
+
+# Terraform
+tfplan
+modules
+.terraform
+.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.backup
+
+# Python
+__pycache__
+__pycache__/*
+*pyc
+
+# Ignore local configuration files
+.env
+.env.*
+.venv
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
