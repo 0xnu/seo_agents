@@ -18,7 +18,7 @@ python3 -m pip install --upgrade pip
 
 ```python
 ## Execute SEO Agents Script
-python3 -m seo_agents
+python3 -m scripts.seo_agents
 
 ## Deactivate Virtual Environment
 deactivate
