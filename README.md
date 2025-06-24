@@ -17,8 +17,11 @@ python3 -m pip install --upgrade pip
 ### SEO Analysis
 
 ```python
-## Execute SEO Agents Script
+## Execute SEO Agents Script - Keyword Based
 python3 -m scripts.seo_agents
+
+## Execute SEO Agents Script - URL Based
+python3 -m scripts.seo_url_agents
 
 ## Deactivate Virtual Environment
 deactivate
