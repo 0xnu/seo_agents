@@ -1,10 +1,12 @@
+anthropic
+beautifulsoup4
 crewai
-openai
 langchain
-langchain-openai
 langchain-anthropic
 langchain-community
-anthropic
-requests
+langchain-openai
+markdownify
+openai
 pydantic
 python-dotenv
+requests
